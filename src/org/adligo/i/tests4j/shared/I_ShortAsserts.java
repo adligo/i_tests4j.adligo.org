@@ -7,13 +7,36 @@ package org.adligo.i.tests4j.shared;
  */
 public interface I_ShortAsserts {
 
-  public void equals(Object expected, Object actual);
+  /**
+   * @param expected
+   * @param actual
+   * @return the actual parameter
+   */
+  public Object equals(Object expected, Object actual);
 
-  public void equals(String message, Object expected, Object actual);
+  /**
+   * 
+   * @param message
+   * @param expected
+   * @param actual
+   * @return the actual parameter
+   */
+  public Object equals(String message, Object expected, Object actual);
 
-  public void equals(String expected, String actual);
+  /**
+   * @param expected
+   * @param actual
+   * @return the actual parameter
+   */
+  public Object equals(String expected, String actual);
 
-  public void equals(String message, String expected, String actual);
+  /**
+   * @param message
+   * @param expected
+   * @param actual
+   * @return the actual parameter
+   */
+  public Object equals(String message, String expected, String actual);
 
   public void isFalse(boolean actual);
 
@@ -23,25 +46,83 @@ public interface I_ShortAsserts {
 
   public void isNull(String message, Object actual);
 
-  public void notNull(Object actual);
+  /**
+   * 
+   * @param actual
+   * @return the actual parameter
+   */
+  public Object notNull(Object actual);
 
-  public void notNull(String message, Object actual);
+  /**
+   * 
+   * @param message
+   * @param actual
+   * @return the actual parameter
+   */
+  public Object notNull(String message, Object actual);
 
-  public void notEquals(Object expected, Object actual);
+  /**
+   * 
+   * @param expected
+   * @param actual
+   * @return the actual parameter
+   */
+  public Object notEquals(Object expected, Object actual);
 
-  public void notEquals(String message, Object expected, Object actual);
+  /**
+   * 
+   * @param message
+   * @param expected
+   * @param actual
+   * @return the actual parameter
+   */
+  public Object notEquals(String message, Object expected, Object actual);
 
-  public void notEquals(String expected, String actual);
+  /**
+   * 
+   * @param expected
+   * @param actual
+   * @return the actual parameter
+   */
+  public Object notEquals(String expected, String actual);
 
-  public void notEquals(String message, String expected, String actual);
+  /**
+   * 
+   * @param message
+   * @param expected
+   * @param actual
+   * @return the actual parameter
+   */
+  public Object notEquals(String message, String expected, String actual);
 
+  /**
+   * @param expected
+   * @param actual the actual parameter
+   */
   public void notSame(Object expected, Object actual);
 
-  public void notSame(String message, Object expected, Object actual);
+  /**
+   * @param message
+   * @param expected
+   * @param actual
+   * @return the actual parameter
+   */
+  public Object notSame(String message, Object expected, Object actual);
 
-  public void same(Object expected, Object actual);
+  /**
+   * @param expected
+   * @param actual
+   * @return the actual parameter
+   */
+  public Object same(Object expected, Object actual);
 
-  public void same(String message, Object expected, Object actual);
+  /**
+   * @param message
+   * @param expected
+   * @param actual
+   * @return the actual parameter
+   */
+  public Object same(String message, Object expected, Object actual);
 
   public void isTrue(boolean actual);
 
