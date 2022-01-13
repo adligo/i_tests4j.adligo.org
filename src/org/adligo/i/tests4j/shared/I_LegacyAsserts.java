@@ -33,8 +33,6 @@ public interface I_LegacyAsserts {
   
   public void assertNull(Object actual);
 
-  public void assertNull(String message, Object actual);
-
   /**
    * This method is inthe order of the classic junit api
    * @param actual
@@ -43,8 +41,6 @@ public interface I_LegacyAsserts {
   public void assertNull(Object actual, String message);
   
   public void assertNotNull(Object actual);
-
-  public void assertNotNull(String message, Object actual);
   
   /**
    * This method is inthe order of the classic junit api
