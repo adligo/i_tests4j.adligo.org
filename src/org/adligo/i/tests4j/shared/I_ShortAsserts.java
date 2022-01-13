@@ -96,10 +96,12 @@ public interface I_ShortAsserts {
   public Object notEquals(String message, String expected, String actual);
 
   /**
+   * 
    * @param expected
-   * @param actual the actual parameter
+   * @param actual
+   * @return the actual parameter
    */
-  public void notSame(Object expected, Object actual);
+  public Object notSame(Object expected, Object actual);
 
   /**
    * @param message
