@@ -24,7 +24,7 @@ import java.util.Collection;
  *         permissions and limitations under the License.
  *         </code></pre>
  */
-public interface I_Asserts extends I_LegacyAsserts, I_ShortAsserts {
+public interface I_Asserts extends I_CollectionAsserts, I_LegacyAsserts, I_ShortAsserts {
   public void assertContains(Collection<?> p, Object a);
 
   public void assertContains(String message, Collection<?> p, Object a);

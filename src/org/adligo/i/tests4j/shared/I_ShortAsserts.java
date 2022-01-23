@@ -1,7 +1,6 @@
 package org.adligo.i.tests4j.shared;
 
 import java.util.List;
-import java.util.function.Supplier;
 
 /**
  * This contains short hand versions of the classic JUnit assertions
