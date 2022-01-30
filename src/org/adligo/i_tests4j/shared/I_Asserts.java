@@ -1,4 +1,4 @@
-package org.adligo.i.tests4j.shared;
+package org.adligo.i_tests4j.shared;
 
 import java.util.Collection;
 

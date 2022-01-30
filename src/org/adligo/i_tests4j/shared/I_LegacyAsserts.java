@@ -1,4 +1,4 @@
-package org.adligo.i.tests4j.shared;
+package org.adligo.i_tests4j.shared;
 
 /**
  * This interface matches the legacy JUnit assertions.
