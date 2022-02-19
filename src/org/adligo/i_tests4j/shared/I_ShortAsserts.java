@@ -155,7 +155,17 @@ public interface I_ShortAsserts {
    * @return the actual parameter
    */
   public void thrown(List<Throwable> expected, Runnable runnable);
-  
+
+  /**
+   * @param message
+   * @param expected this is a a instances of the Throwable
+   *   type, which are compared to the Throwable thrown by the 
+   *   runnable.  The Class of the Throwable MUST match, along with 
+   *   the message.
+   * @param actual
+   * @return the actual parameter
+   */
+  public void thrown(Throwable expected, Runnable runnable);
   
   /**
    * @param message
@@ -168,7 +178,27 @@ public interface I_ShortAsserts {
    */
   public void thrown(String message, List<Throwable> expected, Runnable runnable);
   
+  /**
+   * @param message
+   * @param expected this a of instances of the Throwable
+   *   type, which are compared to the Throwable thrown by the 
+   *   runnable.  The Class of the Throwable MUST match, along with 
+   *   the message.
+   * @param actual
+   * @return the actual parameter
+   */
+  public void thrown(String message, Throwable expected, Runnable runnable);
+  
+  /**
+   * assert that the actual parameter is true
+   * @param actual
+   */
   public void isTrue(boolean actual);
-
+  
+  /**
+   * assert that the actual parameter is true
+   * @param message
+   * @param actual
+   */
   public void isTrue(String message, boolean actual);
 }
