@@ -1,6 +1,7 @@
 package org.adligo.i_tests4j.shared;
 
 import java.util.List;
+import java.util.Optional;
 
 /**
  * This contains short hand versions of the classic JUnit assertions
@@ -26,6 +27,20 @@ import java.util.List;
  */
 public interface I_ShortAsserts {
 
+  /**
+   * @param o the optional
+   * @return the actual parameter
+   */
+  public <O> O empty(Optional<O> o);
+
+  /**
+   * 
+   * @param message
+   * @param o the optional to check
+   * @return the actual parameter
+   */
+  public <O> O  empty(String message, Optional<O> o);
+  
   /**
    * @param expected
    * @param actual
