@@ -31,7 +31,7 @@ public interface I_ShortAsserts {
    * @param o the optional
    * @return the actual parameter
    */
-  public <O> O empty(Optional<O> o);
+  public <O> Optional<O> empty(Optional<O> o);
 
   /**
    * 
@@ -39,11 +39,11 @@ public interface I_ShortAsserts {
    * @param o the optional to check
    * @return the actual parameter
    */
-  public <O> O  empty(String message, Optional<O> o);
+  public <O> Optional<O> empty(String message, Optional<O> o);
   
   /**
    * @param expected
-   * @param actual
+   * @param actual<
    * @return the actual parameter
    */
   public <O> O equals(Object expected, O actual);
