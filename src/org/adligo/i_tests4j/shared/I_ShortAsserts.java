@@ -1,5 +1,6 @@
 package org.adligo.i_tests4j.shared;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -145,6 +146,13 @@ public interface I_ShortAsserts {
    */
   public <O> O notSame(String message, Object expected, O actual);
 
+  default <T> List<T> of(T ... ts) {
+    List<T> r = new ArrayList<T>();
+    for (int i = 0; i < ts.length; i++) {
+      r.add(ts[i]);
+    }
+    return r;
+  }
   /**
    * @param expected
    * @param actual
